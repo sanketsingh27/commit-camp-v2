@@ -72,7 +72,7 @@ export default function Container(props) {
           <a href="#skip" className="skip-nav">
             Skip to content
           </a>
-          <div className="ml-[-0.60rem]">
+          <div className="ml-[-0.60rem] w-full flex">
             <MobileMenu />
             <NavItem href="/" text="Home" />
             <NavItem href="/blog" text="Blog" />
@@ -80,8 +80,18 @@ export default function Container(props) {
             <NavItem href="/newsletter" text="Newsletter" />
             <NavItem href="/snippets" text="Snippets" />
             <NavItem href="/dashboard" text="Dashboard" /> */}
+
+            <span className="py-2 px-4 bg-blue-600 text-white font-semibold rounded-md ml-auto inline-block">
+              <a
+                target="_blank"
+                href="https://chat.whatsapp.com/FDYpilxNHGcI8kjxMIZdQa"
+                rel="noopener noreferrer"
+              >
+                Join the waitlist.
+              </a>
+            </span>
           </div>
-          <button
+          {/* <button
             aria-label="Toggle Dark Mode"
             type="button"
             className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all"
@@ -114,7 +124,7 @@ export default function Container(props) {
                 )}
               </svg>
             )}
-          </button>
+          </button> */}
         </nav>
       </div>
       <main
