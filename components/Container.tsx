@@ -91,10 +91,10 @@ export default function Container(props) {
               </a>
             </span>
           </div>
-          {/* <button
+          <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all"
+            className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all ml-2"
             onClick={() =>
               setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
             }
@@ -124,7 +124,7 @@ export default function Container(props) {
                 )}
               </svg>
             )}
-          </button> */}
+          </button>
         </nav>
       </div>
       <main

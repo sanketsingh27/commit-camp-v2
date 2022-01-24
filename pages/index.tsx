@@ -14,7 +14,7 @@ import project from '../public/logos/projects.png';
 export default function Home({ videos }) {
   return (
     <Container>
-      <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
+      <div className="flex flex-col justify-center items-start max-w-4xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
         <section className="bg-blue-600 p-4 rounded-xl text-center">
           <div className="text-center text-3xl font-extrabold tracking-tight md:text-5xl lg:text-6xl">
             <h1 className="font-bold text-white ">Skill Up and Get Hired.</h1>
@@ -33,7 +33,26 @@ export default function Home({ videos }) {
           </h3>
         </section>
 
-        <section className="text-black my-6 ">
+        <section className="mt-8 p-7 rounded-lg text-black w-full pt-4 bg-gray-200 md:flex-wrap gap-6">
+          <p className="text-2xl font-bold">How To join commit camp</p>
+          <ul className="list-none pl-5">
+            <li className="text-lg">
+              <span className="font-bold "> Step 1 : </span>
+              Register for our free 1 week workshop on fundamentals of web
+              development with live mentors.
+            </li>
+            <li className="font-xl">
+              <span className="font-bold"> Step 2 : </span>
+              complete and submit the assignments.
+            </li>
+            <li className="font-xl">
+              <span className="font-bold"> Step 3 : </span>
+              Our team of instructors will evaluate your work and call you back
+            </li>
+          </ul>
+        </section>
+
+        <section className="text-black  dark:text-white my-6 ">
           <h1 className="text-2xl text-blue-600 font-bold pb-4">Features</h1>
 
           <div className="flex gap-3 pb-3">
@@ -112,7 +131,7 @@ export default function Home({ videos }) {
           </div>
         </section>
 
-        <section className="text-black my-6 ">
+        <section className="text-black  my-6 ">
           <h1 className="text-xl text-blue-600 font-bold pb-4 text-center">
             WE'LL ENTIRELY FOCUS ON PRACTICE, PRACTICE, PRACTICE
           </h1>
@@ -224,7 +243,7 @@ export default function Home({ videos }) {
           </div>
         </section>
 
-        <section className="text-black my-6 ">
+        <section className="text-black dark:text-white my-6 ">
           <h1 className="text-xl text-blue-600 font-bold pb-4 text-center">
             WE'LL ENTIRELY FOCUS ON CUTTING EDGE TECHNOLOGIES
           </h1>
