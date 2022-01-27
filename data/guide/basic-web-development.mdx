@@ -1,0 +1,31 @@
+---
+title: 'test guide title'
+publishedAt: '2021-03-19'
+summary: "Did you know it's possible to use Redis for your entire database? Hashmaps, counters, sorted lists, and even queues. Learn how to deploy a Redis & Next.js app in a few short minutes."
+image: '/static/images/serverless-redis-nextjs/og.png'
+---
+
+import { CodeSandbox } from 'mdx-embed';
+
+When front-end developers are learning the full-stack, they often stumble on which [backend to use](/blog/backend). If they hear Redis, they think of in-memory caching. That's what I thought, at least.
+After doing more research, I was surprised to find Redis excels at [hashmaps, counters, sorted lists, and even queues](http://oldblog.antirez.com/post/take-advantage-of-redis-adding-it-to-your-stack.html). It's possible to use Redis for your entire database!
+
+<CodeSandbox codeSandboxId="box-model-988zx" />
+
+This article will explore using Redis with Next.js in Serverless environments.
+
+### Creating a Redis Instance
+
+[Upstash](https://upstash.com/) is the easiest way I've found to deploy a managed Redis instance. A few reasons I recommend it:
+
+- There's a generous free tier, and then per-request pricing when you're ready to upgrade. This keeps costs free (or extremely low). There's even a $120/month cap to prevent surprises, plus reserved plans for larger projects.
+- With Upstash, you can use Redis for more than just caching with durable storage. There's even [Strong Consistency](https://docs.upstash.com/docs/overall/consistency) mode for guaranteed, durable writes.
+- It's fast. Really, really fast. Extremely low latency.
+
+The Upstash Integration for Vercel makes it easy to get started with Serverless Redis. We'll start by deploying the [completed project](https://roadmap-redis.vercel.app/), and then running the application locally.
+
+1. [Deploy the demo to Vercel using the Upstash Integration.](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-redis&project-name=redis-roadmap&repository-name=redis-roadmap&demo-title=Redis%20Roadmap&demo-description=Create%20and%20upvote%20features%20for%20your%20product.&demo-url=https%3A%2F%2Froadmap-redis.vercel.app%2F&integration-ids=oac_V3R1GIpkoJorr6fqyiwdhl17)
+2. You'll be prompted to sign-up or sign-in to Upstash.
+3. Then, you can create a free database and attach it to your Vercel project.
+4. Click "Complete on Vercel".
+5. That's it! You should have a deployed project and URL.

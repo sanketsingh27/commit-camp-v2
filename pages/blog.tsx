@@ -95,6 +95,7 @@ export default function Blog({
 }
 
 export function getStaticProps() {
+  console.log('allBlog =', allBlogs.length);
   const posts = allBlogs.map((post) =>
     pick(post, ['slug', 'title', 'summary', 'publishedAt'])
   );

@@ -14,7 +14,7 @@ export default function BlogPost({
   const views = data?.total;
 
   return (
-    <Link href={`/blog/${slug}`}>
+    <Link href={`/guide/${slug}`}>
       <a className="w-full">
         <div className="w-full mb-8">
           <div className="flex flex-col justify-between md:flex-row">
