@@ -5,6 +5,7 @@ import ProsCard from 'components/ProsCard';
 import ConsCard from 'components/ConsCard';
 import Step from 'components/Step';
 import ImageWithTheme from 'components/ImageWithTheme';
+import Sandpack from 'components/Sandpack';
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -31,7 +32,8 @@ const MDXComponents = {
   a: CustomLink,
   ConsCard,
   ProsCard,
-  Step
+  Step,
+  Sandpack
 };
 
 export default MDXComponents;

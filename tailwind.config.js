@@ -4,6 +4,9 @@ module.exports = {
   content: ['./pages/**/*.tsx', './components/**/*.tsx', './layouts/**/*.tsx'],
   darkMode: 'class',
   theme: {
+    minHeight: {
+      hero: '600px'
+    },
     extend: {
       colors: {
         'blue-opaque': 'rgb(13 42 148 / 18%)',
