@@ -45,8 +45,15 @@ export default function Container(props) {
     ...customMeta
   };
 
+  const background = {
+    backgroundImage: `linear-gradient(#444cf7 3.1px, transparent 3.1px), linear-gradient(to right, #444cf7 3.1px, #ececfd 3.1px)`,
+    backgroundColor: ` #ececfd`,
+    backgroundSize: `62px 62px`,
+    opacity: 0.6
+  };
+
   return (
-    <div className="bg-gray-50 dark:bg-gray-900">
+    <div style={background} className="bg-gray-50 dark:bg-gray-900">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />

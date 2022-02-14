@@ -1,6 +1,7 @@
 const { spacing, fontFamily } = require('tailwindcss/defaultTheme');
 
 module.exports = {
+  mode: 'jit',
   content: ['./pages/**/*.tsx', './components/**/*.tsx', './layouts/**/*.tsx'],
   darkMode: 'class',
   theme: {
@@ -10,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         'blue-opaque': 'rgb(13 42 148 / 18%)',
+        'blue-primary': '#2298FF',
         gray: {
           0: '#fff',
           100: '#fafafa',

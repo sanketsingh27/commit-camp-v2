@@ -11,13 +11,13 @@ export default function RegistrationForm() {
 
   return (
     <form
-      className="border-blue rounded-md border-2 text-left p-2"
+      className=" bg-white  text-blue-primary text-sm text-left p-4 rounded-3xl"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <label className="font-bold " htmlFor="name">
+      <label className="font-bold  " htmlFor="name">
         Name: <br />
         <input
-          className="border-gray-200 rounded-md border-2  w-60"
+          className="border-blue-primary rounded-md border-2  w-60  sm:w-full"
           id="name"
           type={'text'}
           {...register('name')}
@@ -29,7 +29,7 @@ export default function RegistrationForm() {
         Email: <br />
         <input
           id="email"
-          className="border-gray-200 rounded-md border-2 w-60"
+          className="border-blue-primary rounded-md border-2 w-60 sm:w-full"
           {...register('email', { required: true })}
         />
         {errors.email && <span>This field is required</span>}
@@ -40,7 +40,7 @@ export default function RegistrationForm() {
         Contact Number: <br />
         <input
           id="number"
-          className="border-gray-200 rounded-md border-2 w-60"
+          className="border-blue-primary rounded-md border-2 w-60 sm:w-full"
           {...register('number', { required: true })}
         />
         {errors.number && <span>This field is required</span>}
@@ -52,7 +52,7 @@ export default function RegistrationForm() {
         <br />
         <select
           id="hours"
-          className="border-gray-200 rounded-md border-2 w-60"
+          className="border-blue-primary rounded-md border-2 w-60 sm:w-full"
           {...register('hours', { required: true })}
         >
           <option value="<2">less that 2</option>
@@ -69,7 +69,7 @@ export default function RegistrationForm() {
         <br />
         <textarea
           id="kyc"
-          className="border-gray-200 rounded-md border-2 w-60"
+          className="border-blue-primary rounded-md border-2 w-60 sm:w-full"
           {...register('kyc ', { required: true })}
         />
         {errors.kyc && <span>This field is required</span>}
