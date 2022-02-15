@@ -15,11 +15,6 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
     "/404": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -39,6 +34,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "server/pages/_middleware.js"
+    ],
+    "/reactjs": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/reactjs.js"
+    ],
+    "/reactjs/[slug]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/reactjs/[slug].js"
     ]
   },
   "ampFirstPages": []

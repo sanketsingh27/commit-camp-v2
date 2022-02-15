@@ -5,7 +5,7 @@ import Container from 'components/Container';
 import Subscribe from 'components/Subscribe';
 import ViewCounter from 'components/ViewCounter';
 import type { PropsWithChildren } from 'react';
-import type { Blog } from '.contentlayer/types';
+import type { Reactjs } from '.contentlayer/types';
 
 const editUrl = (slug) =>
   `https://github.com/leerob/leerob.io/edit/main/data/blog/${slug}.mdx`;
@@ -17,7 +17,7 @@ const discussUrl = (slug) =>
 export default function BlogLayout({
   children,
   post
-}: PropsWithChildren<{ post: Blog }>) {
+}: PropsWithChildren<{ post: Reactjs }>) {
   return (
     <Container
       title={`${post.title} – Sanket Singh`}

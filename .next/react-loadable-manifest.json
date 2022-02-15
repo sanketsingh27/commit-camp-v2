@@ -1,1 +1,8 @@
-{}
+{
+  "../node_modules/@codesandbox/sandpack-react/dist/esm/index.js -> react-devtools-inline/frontend": {
+    "id": "./node_modules/react-devtools-inline/frontend.js",
+    "files": [
+      "static/chunks/node_modules_react-devtools-inline_frontend_js.js"
+    ]
+  }
+}
