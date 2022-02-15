@@ -7,6 +7,8 @@ import Step from 'components/Step';
 import ImageWithTheme from 'components/ImageWithTheme';
 import Sandpack from 'components/Sandpack';
 
+import { CodeSandbox, Figma } from 'mdx-embed';
+
 const CustomLink = (props) => {
   const href = props.href;
   const isInternalLink = href && (href.startsWith('/') || href.startsWith('#'));
@@ -33,7 +35,9 @@ const MDXComponents = {
   ConsCard,
   ProsCard,
   Step,
-  Sandpack
+  Sandpack,
+  CodeSandbox,
+  Figma
 };
 
 export default MDXComponents;
